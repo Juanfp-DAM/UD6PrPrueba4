@@ -24,4 +24,24 @@ class VectorTest {
         assertArrayEquals(new int[]{7,6,221,5,12,10}, vRev2);
     }
 
+    @org.junit.jupiter.api.Test
+    void reverso3(){
+        //ARRANGE
+        int v3[]={5};
+        //ASSERT
+        int vRev3[]=Vector.reverso(v3);
+        //ACT
+        assertArrayEquals(new int[]{5}, vRev3);
+    }
+
+    @org.junit.jupiter.api.Test
+    void reverso4(){
+        //ARRANGE
+        int v4[]={5,10,20};
+        //ASSERT
+        int vRev4[]=Vector.reverso(v4);
+        //ACT
+        assertArrayEquals(new int[]{20,10,5}, vRev4);
+    }
+
 }
